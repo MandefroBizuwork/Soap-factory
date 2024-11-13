@@ -1,0 +1,63 @@
+/* Carousel arrow buttons */
+.carousel .btn-left,
+.carousel .btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above other elements */
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    width: 100%;
+    font-weight: bolder;
+}
+
+/* Hover effect for buttons */
+.carousel .btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Positioning for left and right buttons */
+.carousel .btn-left {
+    left: 10px; /* Distance from the left edge */
+}
+
+.carousel .btn-right {
+    right: 10px; /* Distance from the right edge */
+}
+
+/* Style the container holding the dots */
+
+.carousel .control-dots {
+    bottom: 0px; /* Distance from the bottom of the carousel */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between dots */
+    position: absolute;
+    z-index: 3;
+}
+
+/* Style for each dot */
+.carousel .control-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc; /* Default color */
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for active (selected) dot */
+.carousel .control-dots .dot.selected {
+    background-color: #333; /* Active color */
+    transform: scale(1.2); /* Slightly larger for the active indicator */
+}

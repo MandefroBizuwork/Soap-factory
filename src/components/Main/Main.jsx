@@ -76,7 +76,7 @@ const Main = () => {
             position: "absolute",
             bottom: "0",
             left: "0",
-            zIndex: "-1",
+            zIndex: "1",
 
             width: "100%",
             overflow: "hidden",
@@ -102,36 +102,9 @@ const Main = () => {
       </section>
 
       {/* Carousel and Other Sections */}
-      <section id="slide">    <MySlide /></section>
+      <section className="container-fluid bg-light text-center" id="slide">    <MySlide /></section>
   
-     <section id= "path"> <div
-        style={{
-          position: "relative",
-          bottom: "0",
-          left: "0",
-          zIndex: "-1",
-
-          width: "100%",
-          overflow: "hidden",
-          marginTop: "-2%",
-          border: "none",
-          strokeWidth: "0px",
-        }}
-        class="custom-shape-divider-bottom-1638549227"
-      >
-        <svg
-          style={{ border: "none", opacity: "1" }}
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            style={{ border: "none", fill: "#3D4D6A" }}
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          ></path>
-        </svg>
-      </div></section>
+    
       {/* <Service /> */}
   <section id="products">    <Products /></section>
   <section id="products">    <About /></section>
